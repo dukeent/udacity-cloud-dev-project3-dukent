@@ -10,7 +10,6 @@ terraform/.terraform.tfstate.lock.info
 deployments/k8s/aws-secret.yaml
 deployments/k8s/env-configmap.yaml
 deployments/k8s/env-secret.yaml
-command.sh
 Classroom_Project_Instructions/Part_0_Prerequisites_and_Getting_Started.md
 Classroom_Project_Instructions/Part_I_Monolithic_Application.md
 Classroom_Project_Instructions/Part_II_Microservices_Application.md
