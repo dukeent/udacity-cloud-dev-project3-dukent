@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: aws-dev-udacity-prj3
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  POSTGRES_DB: udacityprj3
+  POSTGRES_HOST: aws-dev-udacity-prj3.cm3zblunibmi.us-east-1.rds.amazonaws.com
+  URL: http://a4cef7c9319b64021bed70bde959c380-1846549473.us-east-1.elb.amazonaws.com
+metadata:
+  name: env-config
+  
