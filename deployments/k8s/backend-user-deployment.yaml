@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: backend-user
+  name: backend-user
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: backend-user
+  template:
+    metadata:
+      labels:
+        service: backend-user
+    spec:
+      containers:
+        - image: dukeent/udagram-api-user
+          name: backend-user
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "1000Mi"
+              cpu: "250m"
+            limits:
+              memory: "2000Mi"
+              cpu: "500m"
+          envFrom:
+            - secretRef:
+                name: env-secret
+            - configMapRef:
+                name: env-config
+            - secretRef:
+                name: aws-secret
+          volumeMounts:
+            - name: aws-secret
+              mountPath: "/root/.aws/"
+              readOnly: true
+      restartPolicy: Always
+      volumes:
+        - name: aws-secret
+          secret:
+            secretName: aws-secret   
