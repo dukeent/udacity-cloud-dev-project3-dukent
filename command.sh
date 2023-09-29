@@ -66,9 +66,9 @@ kubectl get pods # It should show the STATUS as Running
 
 ## Run these commands from the /udagram-deployment directory
 ## Rolling update the containers of "frontend" deployment
-kubectl set image deployment udagram-frontend udagram-frontend=dukeent/udagram-frontend:v8
-kubectl set image deployment backend-feed backend-feed=dukeent/udagram-api-feed:v8
-kubectl set image deployment backend-user backend-user=dukeent/udagram-api-user:v8
-kubectl set image deployment reverseproxy reverseproxy=dukeent/udagram-reverseproxy:v8
+kubectl set image deployment udagram-frontend udagram-frontend=dukeent/udagram-frontend:latest
+kubectl set image deployment backend-feed backend-feed=dukeent/udagram-api-feed:latest
+kubectl set image deployment backend-user backend-user=dukeent/udagram-api-user:latest
+kubectl set image deployment reverseproxy reverseproxy=dukeent/udagram-reverseproxy:latest
 
     
