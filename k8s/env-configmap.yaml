@@ -6,7 +6,7 @@ data:
   AWS_REGION: us-east-1
   POSTGRES_DB: udacityprj3
   POSTGRES_HOST: aws-dev-udacity-prj3.coqyjheht7ru.us-east-1.rds.amazonaws.com
-  URL: https://6498B0D5F4BED72B444B24F1116FD0FC.gr7.us-east-1.eks.amazonaws.com
+  URL: https://a93750b2ac1384c0d9ffaa17383def40-597439060.us-east-1.elb.amazonaws.com
 metadata:
   name: env-config
   
